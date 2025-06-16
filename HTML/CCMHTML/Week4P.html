@@ -28,7 +28,7 @@
 
 </head>
 
-<body>
+<body data-json="../../json/media/ccm.json" data-section="Week 4">
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -88,14 +88,7 @@
         </div>
         <!-- /.row -->
 
-        <!-- Projects Row -->
-        <div class="row">
-            <div class="col-md-3 portfolio-item">
-                <a href="https://drive.google.com/thumbnail?id=1DtL4g_LLto--IGGMbN_n1JIPjzXhatKX&sz=w1000" target="_blank">
-                    <img class="img-responsive" src="https://drive.google.com/thumbnail?id=1DtL4g_LLto--IGGMbN_n1JIPjzXhatKX&sz=w1000" alt="">
-                </a>
-            </div>
-
+        <div class="row" id="gallery-container"></div>
 
         <!-- Pagination -->
         <div class="row text-center">
@@ -135,6 +128,9 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Media Loader JavaScript -->
+    <script src="../../js/media-loader.js"></script>
 
 </body>
 
