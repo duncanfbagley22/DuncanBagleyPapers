@@ -28,7 +28,7 @@
 
 </head>
 
-<body data-json="../../json/media/ccm.json" data-section="Week 2">
+<body>
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -68,7 +68,6 @@
                         <a href="../OtherHTML/Other.html">Notes</a>
                     </li>
                 </ul>
-                </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -89,23 +88,8 @@
         <!-- /.row -->
 
         <div class="row" id="gallery-container"></div>
+        <div id="pagination-container" class="row text-center"></div>
 
-        <!-- Pagination -->
-        <div class="row text-center">
-            <div class="col-lg-12">
-                <ul class="pagination">
-                    <li>
-                        <a href="#">&laquo;</a>
-                    </li>
-                    <li class="active">
-                        <a href="../CCMHTML/Week1P.html">1</a>
-                    </li>
-                    <li>
-                        <a href="#">&raquo;</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
         <!-- /.row -->
 
         <hr>
@@ -115,9 +99,12 @@
             <div class="row">
                 <div class="col-lg-12">
                     <p>Copyright &copy; Duncan Bagley 2016</p>
+
                 </div>
+
             </div>
             <!-- /.row -->
+
         </footer>
 
     </div>
@@ -131,6 +118,14 @@
 
     <!-- Media Loader JavaScript -->
     <script src="../../js/media-loader.js"></script>
+
+    <script>
+        loadMedia({
+        jsonPath: '../../json/media/ccm.json',  // relative path to your JSON
+        section: 'Week 2',        // or pass via ?section=Week%201
+        pageSize: 20              // Optional: default is 20
+        });
+   </script>
 
 </body>
 

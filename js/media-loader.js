@@ -1,44 +1,78 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const body = document.body;
-  const jsonUrl = body.dataset.json;
-  const sectionName = body.dataset.section;
+function loadMedia(config) {
+  const params = new URLSearchParams(window.location.search);
 
-  const container = document.getElementById("gallery-container");
+  const jsonPath = params.get("json") || config.jsonPath || "media.json";
+  const section = params.get("section") || config.section || "Week 1";
+  const currentPage = parseInt(params.get("page") || "1", 10);
+  const pageSize = config.pageSize || 20;
 
-  if (!jsonUrl || !sectionName) {
-    container.innerHTML = "<p>Error: Missing data-json or data-section on <body>.</p>";
-    return;
-  }
-
-  fetch(jsonUrl)
+  fetch(jsonPath)
     .then(res => res.json())
     .then(data => {
-      const items = data[sectionName];
-      if (!items || !Array.isArray(items)) {
-        container.innerHTML = `<p>No media found for section "${sectionName}".</p>`;
+      const items = data[section];
+      if (!items || items.length === 0) {
+        document.getElementById("gallery-container").innerHTML = "<p>No media found.</p>";
         return;
       }
 
-      items.forEach(item => {
+      const totalPages = Math.ceil(items.length / pageSize);
+      const pageItems = items.slice((currentPage - 1) * pageSize, currentPage * pageSize);
+
+      const container = document.getElementById("gallery-container");
+      container.innerHTML = "";
+
+      pageItems.forEach(item => {
         const col = document.createElement("div");
         col.className = "col-md-3 portfolio-item";
 
         const link = document.createElement("a");
-        link.href = item.type === "video" && item.video_link ? item.video_link : item.url;
+        link.href = item.video_link || item.thumbnail;
         link.target = "_blank";
 
-        const img = document.createElement("img");
-        img.className = "img-responsive";
-        img.src = item.url;
-        img.alt = item.name || "";
+        const media = document.createElement("img");
+        media.className = "img-responsive";
+        media.src = item.thumbnail;
+        media.alt = item.name || "";
 
-        link.appendChild(img);
+        link.appendChild(media);
         col.appendChild(link);
         container.appendChild(col);
       });
+
+      renderPagination(currentPage, totalPages, section, jsonPath);
     })
     .catch(err => {
-      console.error(err);
-      container.innerHTML = "<p>Failed to load gallery.</p>";
+      console.error("Error loading media:", err);
+      document.getElementById("gallery-container").innerHTML = "<p>Error loading media.</p>";
     });
-});
+}
+
+function renderPagination(currentPage, totalPages, section, jsonPath) {
+  const container = document.getElementById("pagination-container");
+  container.innerHTML = "";
+
+  if (totalPages <= 1) return;
+
+  const ul = document.createElement("ul");
+  ul.className = "pagination";
+
+  const createPageLink = (page, label, isActive = false) => {
+    const li = document.createElement("li");
+    if (isActive) li.classList.add("active");
+
+    const a = document.createElement("a");
+    a.href = `?section=${encodeURIComponent(section)}&json=${encodeURIComponent(jsonPath)}&page=${page}`;
+    a.textContent = label;
+    li.appendChild(a);
+    return li;
+  };
+
+  ul.appendChild(createPageLink(Math.max(1, currentPage - 1), "«"));
+
+  for (let i = 1; i <= totalPages; i++) {
+    ul.appendChild(createPageLink(i, i, i === currentPage));
+  }
+
+  ul.appendChild(createPageLink(Math.min(totalPages, currentPage + 1), "»"));
+  container.appendChild(ul);
+}
