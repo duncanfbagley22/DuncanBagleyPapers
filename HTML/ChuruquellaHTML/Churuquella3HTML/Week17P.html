@@ -47,7 +47,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="../../CCMHTML/CCM.html">CCM Perú</a>
+                        <a href="../../../HTML/CCMHTML/CCM.html">CCM Perú</a>
                     </li>
                     <li>
                         <a href="../../ChuruquellaHTML/Churuquella.html">Churuquella</a>
@@ -88,60 +88,9 @@
         <!-- /.row -->
 
         <!-- Projects Row -->
-<div class="col-md-3 portfolio-item">
-    <a href="https://drive.google.com/thumbnail?id=1QLmLqTlfigy_bgwN1ObuGaYaHq3bHtUW&sz=w1000" target="_blank">
-        <img class="img-responsive"
-            src="https://drive.google.com/thumbnail?id=1QLmLqTlfigy_bgwN1ObuGaYaHq3bHtUW&sz=w1000" alt="">
-    </a>
-</div>
 
-<div class="col-md-3 portfolio-item">
-    <a href="https://drive.google.com/thumbnail?id=1WBFhSXVeIfWPI1FjnUxMKE3Squ3rOFu4&sz=w1000" target="_blank">
-        <img class="img-responsive"
-            src="https://drive.google.com/thumbnail?id=1WBFhSXVeIfWPI1FjnUxMKE3Squ3rOFu4&sz=w1000" alt="">
-    </a>
-</div>
-
-<div class="col-md-3 portfolio-item">
-    <a href="https://drive.google.com/thumbnail?id=1RbuZC2LqTTffWnMyHxH9kuJ4ehmLSPqg&sz=w1000" target="_blank">
-        <img class="img-responsive"
-            src="https://drive.google.com/thumbnail?id=1RbuZC2LqTTffWnMyHxH9kuJ4ehmLSPqg&sz=w1000" alt="">
-    </a>
-</div>
-
-<div class="col-md-3 portfolio-item">
-    <a href="https://drive.google.com/thumbnail?id=1ooCmjeeizEHuZZcvP3h1h24aravulooj&sz=w1000" target="_blank">
-        <img class="img-responsive"
-            src="https://drive.google.com/thumbnail?id=1ooCmjeeizEHuZZcvP3h1h24aravulooj&sz=w1000" alt="">
-    </a>
-</div>
-
-<div class="col-md-3 portfolio-item">
-    <a href="https://drive.google.com/thumbnail?id=1biCL7fihE40mE4EbPF0_XFkwp9vXfi5m&sz=w1000" target="_blank">
-        <img class="img-responsive"
-            src="https://drive.google.com/thumbnail?id=1biCL7fihE40mE4EbPF0_XFkwp9vXfi5m&sz=w1000" alt="">
-    </a>
-</div>
-
-
-
-        <!-- Pagination -->
-        <div class="row text-center">
-            <div class="col-lg-12">
-                <ul class="pagination">
-                    <li>
-                        <a href="#">&laquo;</a>
-                    </li>
-                    <li class="active">
-                        <a href="Week17P.html">1</a>
-                    </li>
-                    <li>
-                        <a href="#">&raquo;</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- /.row -->
+        <div class="row" id="gallery-container"></div>
+        <div id="pagination-container" class="row text-center"></div>
 
         <hr>
 
@@ -160,10 +109,21 @@
     <!-- /.container -->
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="../../../js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../../../js/bootstrap.min.js"></script>
+
+    <!-- Media Loader JavaScript -->
+    <script src="../../../js/media-loader.js"></script>
+
+    <script>
+        loadMedia({
+        jsonPath: '../../../json/media/churuquella.json',
+        section: 'Week 17',
+        pageSize: 20
+        });
+   </script>
 
 </body>
 
