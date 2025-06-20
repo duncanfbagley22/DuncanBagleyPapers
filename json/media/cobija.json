@@ -120,7 +120,11 @@
 {"name": "MVI_0322", "type": "video", "video_link": "https://drive.google.com/file/d/1fxLla8jhesmGFNzzCsUnWw3UfSflLFAz/view?usp=drive", "thumbnail": "https://drive.google.com/thumbnail?id=1fxLla8jhesmGFNzzCsUnWw3UfSflLFAz&sz=w1000"},
 {"name": "MVI_0323", "type": "video", "video_link": "https://drive.google.com/file/d/1wekGhWDO3yiApVd9_b0M4akZAd6BeWJ6/view?usp=drive", "thumbnail": "https://drive.google.com/thumbnail?id=1wekGhWDO3yiApVd9_b0M4akZAd6BeWJ6&sz=w1000"},
 {"name": "MVI_0325", "type": "video", "video_link": "https://drive.google.com/file/d/10kMtTTN0m38gCfIeB07oeSpV062cwHGc/view?usp=drive", "thumbnail": "https://drive.google.com/thumbnail?id=10kMtTTN0m38gCfIeB07oeSpV062cwHGc&sz=w1000"},
-{"name": "Oficina 11", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1rmOKkvFzRO-oZrSydqzfy3s2krvwyPuo&sz=w1000"}
+{"name": "Oficina 11", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1rmOKkvFzRO-oZrSydqzfy3s2krvwyPuo&sz=w1000"},
+{"name": "File0217", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=149dOp2LBjpZzudRYym86ExyT6Bs8truW&sz=w1000"},
+{"name": "File0220", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1qI6vNL0R03VSF9Z10byrv8p0kfvGeSOR&sz=w1000"},
+{"name": "File0223", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1oS_1AzjBdceVXqncHav16FWViiIwO3NH&sz=w1000"},
+{"name": "File0225", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=17O9IjpbpzZpYL_HH3MRIpRQkrHQ936iu&sz=w1000"}
 ],
 "Week 6": [
 {"name": "DSCF2598", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1FnDPzF9hjIROxm16zj0w8luVmhGRcjm2&sz=w1000"},
@@ -195,13 +199,18 @@
 {"name": "DSCN1271", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1iYQQnuK-_ZmHJN0SlPj42sp3VG9dfmTp&sz=w1000"},
 {"name": "DSCN1273", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1MdfMYj-dZXLj2mVHfPsQVLouDgp6yEcv&sz=w1000"},
 {"name": "DSCN1275", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1MhIt2s2LN4ZTU9pbvFiMZdJLD363--66&sz=w1000"},
-{"name": "DSCN1278", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=15lZLgius1RBcltdXOzm5CyqTuTyP27Gm&sz=w1000"},
 {"name": "IMG_2674", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1Pxq5sh9fXCu1oWLPIUpzjsNJzGdUUg1y&sz=w1000"},
 {"name": "IMG_2675", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=12W3mvge61ng2o25nlp9UQ9sx6bnA8pwS&sz=w1000"},
 {"name": "IMG_2676", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1qe1511Eh-tbUGlwzzdkqEDChKViuGtDj&sz=w1000"},
-{"name": "IMG_2678", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1tNaWwPCa-uvVA5fMjFXyqBG5vxThIF0t&sz=w1000"},
 {"name": "IMG_2679", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1UlSCFF93eHDy6kPtNxk7rxp9LimMP0_s&sz=w1000"},
-{"name": "IMG_2680", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1EWoAaQ9HAYK0DuYwmHZVxrdwA5T3AkxW&sz=w1000"}
+{"name": "IMG_2678", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1tNaWwPCa-uvVA5fMjFXyqBG5vxThIF0t&sz=w1000"},
+{"name": "File0352", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1GzUWsRHv_PzO6jGgIWvqY2WVNZ4Ev6yi&sz=w1000"},
+{"name": "File0353", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1SLgKqB6FV1IXAXulgb_ER9xcrcQvxw_m&sz=w1000"},
+{"name": "File0357", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1mC_29DVMuZwtebc1wlro3gPg-N6H7_sF&sz=w1000"},
+{"name": "DSCN1278", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=15lZLgius1RBcltdXOzm5CyqTuTyP27Gm&sz=w1000"},
+{"name": "IMG_2680", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1EWoAaQ9HAYK0DuYwmHZVxrdwA5T3AkxW&sz=w1000"},
+{"name": "File0294", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1SKVSOHqf1EHhTudyEWNagP8tlJIRmYCN&sz=w1000"},
+{"name": "File0295", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1vlmtV087sz5xsSB0lGhxD6Yu4D1x9fXl&sz=w1000"}
 ],
 "Week 9": [
 {"name": "DSCF2657", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1PaOlHoq9djn14rVq4aCGV3l_wMZN3wdm&sz=w1000"},
