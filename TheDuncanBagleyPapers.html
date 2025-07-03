@@ -18,6 +18,28 @@
 
     <link rel="icon" href="assets/bolivia.png" type="image/png">
 
+            <style>
+            /* Show dropdown on hover */
+            .navbar-nav > .dropdown:hover > .dropdown-menu {
+                display: block;
+            }
+
+            .dropdown-menu {
+                margin-top: 0; /* Aligns it flush under the link */
+            }
+
+            .dropdown-menu {
+            transition: opacity 0.2s ease-in-out;
+            opacity: 0;
+            display: block;
+            visibility: hidden;
+        }
+        .navbar-nav > .dropdown:hover > .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -38,26 +60,56 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li>
-                        <a href="HTML/CCMHTML/CCM.html">CCM Perú</a>
+                    <li class="dropdown">
+                        <a href="../CCMHTML/CCM.html" class="dropdown-toggle" data-toggle="dropdown" style="cursor:pointer">CCM Perú</a>
+                            <ul class="dropdown-menu">
+                            <li><a href="./HTML/CCMHTML/CCM.html">Transfer 1</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../ChuruquellaHTML/Churuquella.html" class="dropdown-toggle" data-toggle="dropdown" style="cursor:pointer">Churuquella</a>
+                            <ul class="dropdown-menu">
+                            <li><a href="./HTML/ChuruquellaHTML/Churuquella.html">Transfer 1</a></li>
+                            <li><a href="./HTML/ChuruquellaHTML/Churuquella2.html">Transfer 2</a></li>
+                            <li><a href="./HTML/ChuruquellaHTML/Churuquella3.html">Transfer 3</a></li>
+                            <li><a href="./HTML/ChuruquellaHTML/Churuquella4.html">Transfer 4</a></li>
+                            <li><a href="./HTML/ChuruquellaHTML/Churuquella5.html">Transfer 5</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="./HTML/JardinHTML/Jardin.html" class="dropdown-toggle" data-toggle="dropdown" style="cursor:pointer">Jardin</a>
+                            <ul class="dropdown-menu">
+                            <li><a href="./HTML/JardinHTML/Jardin.html">Transfer 1</a></li>
+                            <li><a href="./HTML/JardinHTML/Jardin2.html">Transfer 2</a></li>
+                            <li><a href="./HTML/JardinHTML/Jardin3.html">Transfer 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="./HTML/CobijaHTML/Cobija.html" class="dropdown-toggle" data-toggle="dropdown" style="cursor:pointer">Cobija</a>
+                            <ul class="dropdown-menu">
+                            <li><a href="./HTML/CobijaHTML/Cobija.html">Transfer 1</a></li>
+                            <li><a href="./HTML/CobijaHTML/Cobija2.html">Transfer 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="./HTML/IngaviHTML/Ingavi.html" class="dropdown-toggle" data-toggle="dropdown" style="cursor:pointer">Ingavi</a>
+                            <ul class="dropdown-menu">
+                            <li><a href="./HTML/IngaviHTML/Ingavi.html">Transfer 1</a></li>
+                            <li><a href="./HTML/IngaviHTML/Ingavi2.html">Transfer 2</a></li>
+                            <li><a href="./HTML/IngaviHTML/Ingavi3.html">Transfer 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="./HTML/VGHTML/VG.html" class="dropdown-toggle" data-toggle="dropdown" style="cursor:pointer">Villa Graciela</a>
+                            <ul class="dropdown-menu">
+                            <li><a href="./HTML/VGHTML/VG.html">Transfer 1</a></li>
+                            <li><a href="./HTML/VGHTML/VG2.html">Transfer 2</a></li>
+                            <li><a href="./HTML/VGHTML/VG3.html">Transfer 3</a></li>
+                            <li><a href="./HTML/VGHTML/VG4.html">Transfer 4</a></li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="HTML/ChuruquellaHTML/Churuquella.html">Churuquella</a>
-                    </li>
-                    <li>
-                        <a href="HTML/JardinHTML/Jardin.html">Jardín</a>
-                    </li>
-                    <li>
-                        <a href="HTML/CobijaHTML/Cobija.html">Cobija</a>
-                    </li>
-                    <li>
-                        <a href="HTML/IngaviHTML/Ingavi.html">Ingavi</a>
-                    </li>
-                    <li>
-                        <a href="HTML/VGHTML/VG.html">Villa Graciela</a>
-                    </li>
-                     <li>
-                        <a href="HTML/OtherHTML/Other.html">Notes</a>
+                        <a href="./HTML/OtherHTML/Other.html">Notes</a>
                     </li>
                 </ul>
             </div>
