@@ -29,14 +29,26 @@ function loadMedia(config) {
         link.href = item.video_link || item.thumbnail;
         link.target = "_blank";
 
-        const media = document.createElement("img");
-        media.className = "img-responsive";
-        media.src = item.thumbnail;
-        media.alt = item.name || "";
+const wrapper = document.createElement("div");
+wrapper.className = "media-wrapper";
 
-        link.appendChild(media);
-        col.appendChild(link);
-        container.appendChild(col);
+const media = document.createElement("img");
+media.className = "img-responsive";
+media.src = item.thumbnail;
+media.alt = item.name || "";
+
+wrapper.appendChild(media);
+
+// If it's a video, add a play icon overlay
+if (item.video_link) {
+  const playIcon = document.createElement("div");
+  playIcon.className = "play-icon";
+  wrapper.appendChild(playIcon);
+}
+
+link.appendChild(wrapper);
+col.appendChild(link);
+container.appendChild(col);
       });
 
       renderPagination(currentPage, totalPages, section, jsonPath);
