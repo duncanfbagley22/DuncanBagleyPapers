@@ -167,7 +167,8 @@
         "name": "DSCF0034",
         "type": "image",
         "thumbnail": "https://drive.google.com/thumbnail?id=1YPKS3c2guZee0bf-hJzSoUHc5mf1TzCf&sz=w1000"
-        }
+        },
+        {"name": "ccm_facebook_6", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1RWAyUto3huRfEAgoFcM4QZY2CL5DiXa6&sz=w1000"}
   ],
   "Week 6": [
     {"name": "DSCF0035", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1fAXzq2SL8h5XlZmjZfYkMinfFpjOz5Y8&sz=w1000"},
@@ -218,6 +219,11 @@
     {"name": "DSCF0081", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1ExcY41GuvounQ8eHuzzOy5KA9qLU45Di&sz=w1000"},
     {"name": "DSCF0082", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=15cXvBfd_0tfohOhUG7uwlmWRp4pSMRw8&sz=w1000"},
     {"name": "DSCF0083", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1xMe3Y4xupwaLlw04bSQenS9_v8Tof0P4&sz=w1000"},
-    {"name": "DSCF0085", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1UOr640SeKL27kkBDk7KmwamXlGua0DUA&sz=w1000"}
+    {"name": "DSCF0085", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1UOr640SeKL27kkBDk7KmwamXlGua0DUA&sz=w1000"},
+    {"name": "ccm_facebook_1", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1njDcU9a3hwanuIAVKAvh-xRsyxSlfC1R&sz=w1000"},
+{"name": "ccm_facebook_5", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1rSvL5dpJDFMpEXtx5qiyogyIvzd4M2qW&sz=w1000"},
+{"name": "ccm_facebook_2", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1vo2Nazhd6-Jna4Yu1doBK3NQv5RkZ0-D&sz=w1000"},
+{"name": "ccm_facebook_3", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1XzS3kMoR8QIqecJdwrgqMtOmeblxbzy9&sz=w1000"},
+{"name": "ccm_facebook_4", "type": "image", "thumbnail": "https://drive.google.com/thumbnail?id=1cDCzaNEULub8jAytwmBMbf1qUCfeMv1-&sz=w1000"}
   ]
 }
