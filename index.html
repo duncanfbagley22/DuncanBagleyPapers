@@ -17,8 +17,36 @@
     <link href="css/round-about.css" rel="stylesheet">
 
     <link rel="icon" href="assets/bolivia.png" type="image/png">
+<script>
+  const hash = "7904791f9bb496a3354bf75641e45feb31e881a00cebcb2508e45bd942a6e430"; // Your password hash
 
-            <style>
+  async function checkPassword(input = null) {
+    const password = input || document.getElementById("password").value;
+    const data = new TextEncoder().encode(password);
+    const digest = await crypto.subtle.digest("SHA-256", data);
+    const hashArray = Array.from(new Uint8Array(digest));
+    const hashHex = hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
+
+    if (hashHex === hash) {
+      localStorage.setItem("authenticated", "true");
+      document.getElementById("gate").style.display = "none";
+      document.getElementById("content").style.display = "block";
+    } else {
+      alert("Incorrect password.");
+      document.getElementById("password").value = "";
+    }
+  }
+
+  // Check if already authenticated on page load
+  window.addEventListener("DOMContentLoaded", () => {
+    if (localStorage.getItem("authenticated") === "true") {
+      document.getElementById("gate").style.display = "none";
+      document.getElementById("content").style.display = "block";
+    }
+  });
+</script>
+
+    <style>
             /* Show dropdown on hover */
             .navbar-nav > .dropdown:hover > .dropdown-menu {
                 display: block;
@@ -38,11 +66,22 @@
             opacity: 1;
             visibility: visible;
         }
+        #gate { max-width: 300px; margin: auto; text-align: center; }
     </style>
 
 </head>
 
 <body>
+
+      <!-- Password Gate -->
+  <div id="gate">
+    <h2>The Duncan Bagley Papers</h2>
+    <h3>Enter Password</h3>
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="checkPassword()">Submit</button>
+  </div>
+
+  <div id="content" style="display: none;">
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -55,7 +94,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="TheDuncanBagleyPapers.html">The Duncan Bagley Papers</a>
+                <a class="navbar-brand" href="index.html">The Duncan Bagley Papers</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -206,6 +245,7 @@
             <!-- /.row -->
         </footer>
 
+    </div>
     </div>
     <!-- /.container -->
 
