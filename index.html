@@ -47,25 +47,19 @@
 </script>
 
     <style>
-            /* Show dropdown on hover */
+            
+       @media (min-width: 768px) {
             .navbar-nav > .dropdown:hover > .dropdown-menu {
                 display: block;
-            }
+                opacity: 1;
+                visibility: visible;
+            }}
 
             .dropdown-menu {
-                margin-top: 0; /* Aligns it flush under the link */
-            }
-
-            .dropdown-menu {
+            margin-top: 0; /* Aligns it flush under the link */
             transition: opacity 0.2s ease-in-out;
-            opacity: 0;
-            display: block;
-            visibility: hidden;
         }
-        .navbar-nav > .dropdown:hover > .dropdown-menu {
-            opacity: 1;
-            visibility: visible;
-        }
+
         #gate { max-width: 300px; margin: auto; text-align: center; }
     </style>
 
